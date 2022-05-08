@@ -1,0 +1,8 @@
+atril*
+bluez*
+engrampa*
+gnome-mines
+gnome-sudoku gimp* 
+hexchat*
+mate-calc*
+sgt*
