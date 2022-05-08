@@ -16,7 +16,7 @@ hunspell-pt-br
 hyphen-pt-br
 libreoffice-calc
 libreoffice-gtk3
-libreoffice-light-proof-pt-br
+libreoffice-lightproof-pt-br
 libreoffice-writer
 qt5ct
 timeshift
