@@ -1,0 +1,4 @@
+Unattended-Upgrade::Allowed-Origins {
+	"Debian:bullseye";
+	"Debian:bullseye-security";
+};
