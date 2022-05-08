@@ -20,3 +20,4 @@ libreoffice-lightproof-pt-br
 libreoffice-writer
 qt5ct
 timeshift
+xfce4-genmon-plugin
