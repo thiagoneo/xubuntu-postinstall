@@ -82,13 +82,13 @@ sudo chown -R $USER:$USER $HOME/.config $HOME/.local
 
 
 #---------------------------- INSTALAÇÃO DE TEMAS -----------------------------#
-#### Tela GTK Theme ###
+#### Matcha GTK Theme ###
 cd $SCR_DIRECTORY/
 git clone https://github.com/vinceliuice/Matcha-gtk-theme.git
 cd Matcha-gtk-theme/
 sudo ./install.sh
-#cd /usr/share/themes/
-#sudo tar -xzvf $SCR_DIRECTORY/fluent-theme-patch.tar.gz
+cd /usr/share/themes/
+sudo tar -xzvf $SCR_DIRECTORY/matcha-theme-patch.tar.gz
 
 ### Qogir icon theme ###
 cd $SCR_DIRECTORY/
