@@ -26,9 +26,9 @@ ls $SCR_DIRECTORY/packages/*.deb > pacotes-locais.txt
 sudo apt install $(cat $SCR_DIRECTORY/pacotes-locais.txt) --no-install-recommends -y
 
 
-#--------------------- ADICIONAR REPOSITÓRIO DO DEBIAN ------------------------#
+#------------- ADICIONAR REPOSITÓRIO DO LINUX MINT (para o Firefox) -----------#
 cd $SCR_DIRECTORY/packages
-sudo dpkg -i debian-archive-keyring*.deb
+sudo dpkg -i linuxmint-keyring*.deb
 sudo chown -R root:root $SCR_DIRECTORY/system-files/
 cd $SCR_DIRECTORY/
 sudo \cp -rf $SCR_DIRECTORY/system-files/etc/apt/ /etc/
