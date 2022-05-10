@@ -1,3 +1,4 @@
 kolourpaint
 libreoffice
 neofetch
+yaru-theme-icon
