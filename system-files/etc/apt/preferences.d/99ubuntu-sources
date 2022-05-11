@@ -6,14 +6,6 @@ Package: firefox*
 Pin: release o=Ubuntu
 Pin-Priority: -1
 
-Package: debian-archive-keyring
-Pin: release o=Ubuntu
-Pin-Priority: 1
-
-Package: debian-keyring
-Pin: release o=Ubuntu
-Pin-Priority: 1
-
 Package: chromium-bsu*
 Pin: release o=Ubuntu
 Pin-Priority: 500
