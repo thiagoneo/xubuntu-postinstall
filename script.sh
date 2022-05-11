@@ -26,13 +26,24 @@ ls $SCR_DIRECTORY/packages/*.deb > pacotes-locais.txt
 sudo apt install $(cat $SCR_DIRECTORY/pacotes-locais.txt) --no-install-recommends -y
 
 
-#------------- ADICIONAR REPOSITÓRIO DO LINUX MINT (para o Firefox) -----------#
+#------------------ CONFIGURAÇÃO DO GERENCIADOR DE PACOTES --------------------#
 cd $SCR_DIRECTORY/packages
 sudo dpkg -i linuxmint-keyring*.deb
 sudo chown -R root:root $SCR_DIRECTORY/system-files/
 cd $SCR_DIRECTORY/
 sudo \cp -rf $SCR_DIRECTORY/system-files/etc/apt/ /etc/
 sudo apt update
+
+
+#------------------------ INSTALAR CHROME E ANYDESK ---------------------------#
+cd $SCR_DIRECTORY/packages
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+sudo apt update
+sudo apt install anydesk
 
 
 #---------------------- REMOVER SNAP COMPLETAMENTE ----------------------------#
@@ -56,7 +67,7 @@ sudo apt install $(cat $SCR_DIRECTORY/pacotes.txt) -y
 sudo apt install $(cat $SCR_DIRECTORY/pacotes-sem-recommends.txt) --no-install-recommends -y
 
 
-#--------------------- CONFIGURAR ARQUIVOS DO SISTEMA -------------------------#
+#------------------ CONFIGURAR ARQUIVOS DIVERSOS DO SISTEMA -------------------#
 cd $HOME
 sudo chown -R root:root $SCR_DIRECTORY/system-files/
 cd $SCR_DIRECTORY/
