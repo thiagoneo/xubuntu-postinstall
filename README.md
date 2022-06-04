@@ -1,2 +1,2 @@
-# ubuntu-postinstall
-Script de pós instalação do Ubuntu.
+# xubuntu-postinstall
+Script de pós instalação do Xubuntu.
