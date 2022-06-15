@@ -7,3 +7,7 @@ Pin-Priority: -1
 Package: firefox*
 Pin: release o=pop-os-release
 Pin-Priority: 501
+
+Package: pop-keyring
+Pin: release o=pop-os-release
+Pin-Priority: 501
