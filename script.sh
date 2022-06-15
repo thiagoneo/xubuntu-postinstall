@@ -28,7 +28,7 @@ sudo apt install $(cat $SCR_DIRECTORY/pacotes-locais.txt) --no-install-recommend
 
 #------------------ CONFIGURAÇÃO DO GERENCIADOR DE PACOTES --------------------#
 cd $SCR_DIRECTORY/packages
-sudo dpkg -i linuxmint-keyring*.deb
+sudo dpkg -i pop-keyring*.deb
 sudo chown -R root:root $SCR_DIRECTORY/system-files/
 cd $SCR_DIRECTORY/
 sudo \cp -rf $SCR_DIRECTORY/system-files/etc/apt/ /etc/
@@ -38,7 +38,7 @@ sudo apt update
 sudo snap remove firefox gnome-3-38-2004 gtk-common-themes
 sudo snap remove bare core20
 sudo snap remove snapd
-sudo apt purge firefox* chromium* snapd -y
+sudo apt purge firefox* snapd -y
 sudo apt autoremove --purge -y
 
 
