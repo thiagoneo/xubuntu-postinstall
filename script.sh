@@ -54,6 +54,19 @@ echo ""
 sudo apt install $(cat $SCR_DIRECTORY/pacotes.txt) -y
 sudo apt install $(cat $SCR_DIRECTORY/pacotes-sem-recommends.txt) --no-install-recommends -y
 
+#------------------------ INSTALAR CHROME E ANYDESK ---------------------------#
+cd $SCR_DIRECTORY/packages
+
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
+
+wget http://ftp.us.debian.org/debian/pool/main/p/pangox-compat/libpangox-1.0-0_0.0.2-5.1_amd64.deb
+sudo apt install ./libpangox-1.0-0_0.0.2-5.1_amd64.deb -y
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+sudo apt update
+sudo apt install anydesk -y
+
 
 #------------------ CONFIGURAR ARQUIVOS DIVERSOS DO SISTEMA -------------------#
 cd $HOME
