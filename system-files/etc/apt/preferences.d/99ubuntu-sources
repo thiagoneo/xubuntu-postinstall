@@ -1,11 +1,7 @@
-Package: chromium*
+Package: chromium-browser*
 Pin: release o=Ubuntu
 Pin-Priority: -1
 
 Package: firefox*
 Pin: release o=Ubuntu
 Pin-Priority: -1
-
-Package: chromium-bsu*
-Pin: release o=Ubuntu
-Pin-Priority: 500
