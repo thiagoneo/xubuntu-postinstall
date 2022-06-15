@@ -1,0 +1,9 @@
+# Never prefer these packages from the pop_os repository
+Package: *
+Pin: release o=pop-os-release
+Pin-Priority: -1
+
+# Allow upgrading only these packages from pop_os repo
+Package: firefox*
+Pin: release o=pop-os-release
+Pin-Priority: 501
